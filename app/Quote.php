@@ -9,7 +9,7 @@ class Quote extends Model
 {
     use SoftDeletes;
 
-    protected $table = 'quote';
+    protected $table = 'quotes';
 
     protected $fillable = ['quote', 'author', 'image'];
 
