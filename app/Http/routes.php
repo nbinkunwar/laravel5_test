@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::resource(
+    'quote',
+    'QuoteController',
+    ['only' => ['store', 'index', 'show']]
+);
+//Route::get('/', function () {
+//    return view('welcome');
+//});
